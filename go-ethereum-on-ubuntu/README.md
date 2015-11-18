@@ -73,6 +73,7 @@ The Geth console actually implmements a [JavaScript Runtime Environment](https:/
 
 ```
 var guestBookSource = 'contract GuestBook {   mapping (address => string) entryLog;    function setEntry(string guestBookEntry) {     entryLog[msg.sender] = guestBookEntry;   }    function getMyEntry() constant returns (string) {     return entryLog[msg.sender];   } }'
+
 ```
 
 And now we can proceed to compile this source code.
